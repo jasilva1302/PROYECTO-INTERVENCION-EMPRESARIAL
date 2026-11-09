@@ -1,0 +1,191 @@
+/* Variables de color - Tema Naranja */
+:root {
+    --primary-color: #E67E22;
+    --secondary-color: #D35400;
+    --accent-color: #E74C3C;
+    --light-color: #FDF2E9;
+    --dark-color: #7E5109;
+    --text-light: #A04000;
+}
+
+/* Estilos base para la página de login */
+.login-page {
+    background: url('../images/fondo.png') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login-page .container-fluid {
+    padding: 0 !important;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    background: transparent !important;
+}
+
+/* Contenedor principal más compacto */
+.login-container {
+    width: 100%;
+    max-width: 420px; /* Reducido de 500px */
+    margin: 0 auto;
+    animation: fadeIn 0.5s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: 15px;
+    padding: 1.5rem; /* Reducido de 2.5rem */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Encabezado más compacto */
+.login-header {
+    text-align: center;
+    margin-bottom: 1rem; /* Reducido de 2rem */
+}
+
+.login-logo img {
+    max-width: 280px; /* Reducido de 400px */
+    height: auto;
+    margin-bottom: 0.2rem; /* Reducido de 1.5rem */
+}
+
+.login-header h1 {
+    color: var(--secondary-color);
+    font-size: 1.6rem; /* Reducido de 2rem */
+    margin-bottom: 0.5rem; /* Reducido de 1rem */
+    font-weight: 600;
+}
+
+.login-header p {
+    color: var(--text-light);
+    font-size: 0.9rem; /* Reducido de 1rem */
+    margin-bottom: 0;
+}
+
+/* Tarjeta más compacta */
+.login-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem; /* Reducido de 2rem */
+    border-top: 4px solid var(--primary-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Formulario más compacto */
+.login-form .form-group {
+    margin-bottom: 1rem; /* Reducido de 1.5rem */
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 0.3rem; /* Reducido de 0.5rem */
+    color: var(--dark-color);
+    font-weight: 500;
+    font-size: 0.9rem; /* Reducido de 0.95rem */
+}
+
+.login-form .form-control {
+    width: 100%;
+    padding: 0.7rem 1rem; /* Reducido de 0.85rem */
+    border: 1px solid #EDBB99;
+    border-radius: 6px;
+    font-size: 0.95rem; /* Reducido de 1rem */
+    background-color: #FFF8F0;
+    transition: all 0.3s ease;
+}
+
+.login-form .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.2);
+    outline: none;
+    background-color: white;
+}
+
+.invalid-feedback {
+    color: var(--accent-color);
+    font-size: 0.8rem; /* Reducido de 0.85rem */
+    margin-top: 0.2rem; /* Reducido de 0.25rem */
+    display: block;
+}
+
+/* Botón más compacto */
+.btn-login {
+    width: 100%;
+    padding: 0.75rem; /* Reducido de 0.85rem */
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem; /* Reducido de 1.1rem */
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem; /* Añadido espacio superior */
+}
+
+/* Footer más compacto */
+.login-footer {
+    margin-top: 1.5rem; /* Reducido de 2rem */
+    text-align: center;
+    font-size: 0.85rem; /* Reducido de 0.9rem */
+    color: var(--text-light);
+}
+
+.copyright {
+    margin-top: 0.3rem; /* Reducido de 0.5rem */
+    font-size: 0.75rem; /* Reducido de 0.8rem */
+    color: #BA4A00;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos responsivos ajustados */
+@media (max-width: 576px) {
+    .login-container {
+        padding: 1.2rem; /* Más compacto en móviles */
+        max-width: 90%;
+    }
+    
+    .login-card {
+        padding: 1.2rem;
+    }
+    
+    .login-header h1 {
+        font-size: 1.4rem;
+    }
+    
+    .login-logo img {
+        max-width: 180px; /* Más pequeño en móviles */
+    }
+    
+    .login-form .form-control {
+        padding: 0.6rem 0.9rem;
+    }
+}
+
+body {
+    background: url('../images/fondo.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: var(--dark-color);
+    font-family: Arial, sans-serif;
+}

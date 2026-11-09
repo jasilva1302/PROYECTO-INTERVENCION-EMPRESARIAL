@@ -1,0 +1,331 @@
+/* Estilos comunes para el módulo de tarifas */
+
+/* Estilos de la tabla */
+.table {
+    width: 100%;
+    margin-bottom: 0;
+    background-color: #fff;
+    border-collapse: collapse;
+}
+
+.table td, .table th {
+    padding: 1rem;
+    vertical-align: middle;
+}
+
+.table th {
+    background-color: #2d3748;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.table td {
+    font-size: 0.875rem;
+    color: #4a5568;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.table tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+/* Estilos de botones */
+.btn-group {
+    display: inline-flex;
+    gap: 0.5rem;
+}
+
+.btn-group-sm > .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    border-radius: 0.25rem;
+}
+
+.btn-warning {
+    color: #fff;
+    background-color: #f6ad55;
+    border-color: #f6ad55;
+}
+
+.btn-warning:hover {
+    background-color: #ed8936;
+    border-color: #ed8936;
+    color: #fff;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #4299e1;
+    border-color: #4299e1;
+}
+
+.btn-info:hover {
+    background-color: #3182ce;
+    border-color: #3182ce;
+    color: #fff;
+}
+
+/* Estilos de la paginación */
+/* Sobrescribir estilos de paginación de Laravel */
+.pagination-container nav {
+    display: block !important;
+}
+
+.pagination-container .hidden {
+    display: none !important;
+}
+
+.pagination-container nav > div {
+    display: none !important;
+}
+
+.pagination {
+    display: flex !important;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 0.25rem;
+    margin: 0;
+    gap: 0.25rem;
+    justify-content: flex-end;
+}
+
+.pagination > * {
+    margin: 0 !important;
+}
+
+.pagination .page-item .page-link,
+.pagination .page-link {
+    position: relative;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+    margin: 0;
+    min-width: 38px;
+    height: 38px;
+    line-height: 1.25;
+    color: #2d3748;
+    background-color: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.25rem;
+    transition: all 0.15s ease-in-out;
+    font-size: 0.875rem;
+}
+
+.pagination .page-link:hover {
+    z-index: 2;
+    color: #2d3748;
+    text-decoration: none;
+    background-color: #edf2f7;
+    border-color: #e2e8f0;
+}
+
+.pagination .page-item.active .page-link,
+.pagination span[aria-current="page"] {
+    z-index: 3;
+    color: #fff !important;
+    background-color: #2d3748 !important;
+    border-color: #2d3748 !important;
+}
+
+.pagination .page-item.disabled .page-link,
+.pagination .page-link[aria-disabled="true"] {
+    color: #a0aec0;
+    pointer-events: none;
+    background-color: #fff;
+    border-color: #e2e8f0;
+}
+
+/* Sobrescribir estilos específicos de Laravel */
+.pagination nav[role="navigation"] {
+    display: block !important;
+}
+
+.pagination nav[role="navigation"] span[aria-hidden="true"] {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+.pagination nav[role="navigation"] span[aria-disabled="true"] {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/* Estilos de formularios */
+.form-floating > .form-control,
+.form-floating > .form-select {
+    height: calc(3.5rem + 2px);
+    line-height: 1.25;
+}
+
+.form-floating > label {
+    padding: 1rem 0.75rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #4299e1;
+    box-shadow: 0 0 0 0.2rem rgba(66, 153, 225, 0.25);
+}
+
+/* Estilos de tarjetas */
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    padding: 1rem;
+    margin-bottom: 0;
+    background-color: #2d3748;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.card-footer {
+    padding: 1rem;
+    background-color: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* Estilos de badges */
+.badge {
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    font-size: 0.75em;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+}
+
+.badge.bg-success {
+    background-color: #48bb78 !important;
+    color: #fff;
+}
+
+.badge.bg-danger {
+    background-color: #f56565 !important;
+    color: #fff;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .table-responsive {
+        margin-bottom: 1rem;
+    }
+
+    .btn-group-sm > .btn {
+        padding: 0.25rem 0.4rem;
+    }
+
+    .pagination .page-link {
+        padding: 0.4rem 0.6rem;
+    }
+}
+
+/* Estilos para el selector de registros por página */
+#perPage {
+    width: auto;
+    min-width: 70px;
+    padding: 0.25rem 1.5rem 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    border-radius: 0.25rem;
+    border: 1px solid #e2e8f0;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#perPage:focus {
+    border-color: #4299e1;
+    box-shadow: 0 0 0 0.2rem rgba(66, 153, 225, 0.25);
+    outline: 0;
+}
+
+/* Estilos para los valores numéricos en la tabla */
+.text-end {
+    text-align: right !important;
+}
+
+/* Estilos de modales */
+.modal-header {
+    background-color: #2d3748;
+    color: white;
+}
+
+.modal-header .btn-close {
+    color: white;
+    opacity: 0.8;
+}
+
+.modal-header .btn-close:hover {
+    opacity: 1;
+}
+
+/* Otros estilos necesarios */
+.dropdown-item {
+    padding: .5rem 1.5rem;
+}
+
+.dropdown-item i {
+    width: 1.25rem;
+    text-align: center;
+}
+
+/* Estilos de las tarjetas */
+.card {
+    border: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.card-header {
+    background-color: #2d3748;
+    color: white;
+    padding: 1rem;
+}
+
+/* Estilos de formularios */
+.form-control:focus,
+.form-select:focus {
+    border-color: #fd7e14;
+    box-shadow: 0 0 0 0.2rem rgba(253, 126, 20, 0.25);
+}
+
+/* Estilos de badges */
+.badge {
+    padding: 0.5em 0.75em;
+    font-weight: 500;
+}
+
+.badge.bg-success {
+    background-color: #48bb78 !important;
+}
+
+.badge.bg-danger {
+    background-color: #f56565 !important;
+} 

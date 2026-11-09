@@ -1,0 +1,44 @@
+/* Navbar styles with orange palette */
+.navbar {
+    background-color: #e67e22 !important; /* Primary orange */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: white !important;
+}
+
+.navbar-brand:hover {
+    color: #f8f9fa !important;
+}
+
+.btn-outline-light {
+    color: white;
+    border-color: white;
+}
+
+.btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item:hover {
+    background-color: #f39c12; /* Lighter orange */
+    color: white;
+}
+
+.btn-light {
+    background-color: white;
+    color: #e67e22;
+}
+
+.btn-light:hover {
+    background-color: #f8f9fa;
+    color: #d35400; /* Darker orange */
+}

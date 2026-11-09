@@ -1,0 +1,199 @@
+/* Navbar styles with orange palette */
+.navbar {
+    background-color: #e67e22 !important; /* Primary orange */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+}
+
+.navbar-brand img {
+    height: 60px;
+    margin-right: 5px;
+}
+
+.navbar-brand:hover {
+    color: #f8f9fa !important;
+}
+
+.btn-outline-light {
+    color: white;
+    border-color: white;
+}
+
+.btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.user-dropdown .btn-light {
+    background-color: white;
+    color: #e67e22;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.user-dropdown .btn-light:hover {
+    background-color: #f8f9fa;
+    color: #d35400;
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f39c12;
+    color: white;
+}
+
+.btn-light {
+    background-color: orange;
+    color: #e67e22;
+}
+
+.btn-light:hover {
+    background-color: #f8f9fa;
+    color: #d35400; /* Darker orange */
+}
+
+body {
+    background-color: var(--primary-color); /* Usa el color naranja principal */
+    
+    color: var(--dark-color);
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos de las notificaciones */
+.notifications-dropdown {
+    margin-right: 15px;
+}
+
+.notifications-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    position: relative;
+    padding: 8px;
+    transition: all 0.3s ease;
+}
+
+.notifications-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.notifications-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    min-width: 1.5rem;
+    text-align: center;
+}
+
+.notifications-menu {
+    width: 320px;
+    padding: 0;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.notifications-header {
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notifications-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.notification-item {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+.notification-item:hover {
+    background-color: #f8f9fa;
+}
+
+.notification-item.unread {
+    background-color: #fff3e0;
+}
+
+.notification-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.notification-icon {
+    margin-right: 0.75rem;
+    color: #e67e22;
+    font-size: 1.25rem;
+}
+
+.notification-text {
+    flex: 1;
+}
+
+.notification-title {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.notification-time {
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+.notifications-footer {
+    padding: 0.75rem;
+    text-align: center;
+    border-top: 1px solid #dee2e6;
+}
+
+.notifications-footer a {
+    color: #e67e22;
+    text-decoration: none;
+}
+
+.notifications-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Scrollbar personalizado para el menú de notificaciones */
+.notifications-menu::-webkit-scrollbar {
+    width: 6px;
+}
+
+.notifications-menu::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.notifications-menu::-webkit-scrollbar-thumb {
+    background: #e67e22;
+    border-radius: 3px;
+}
+
+.notifications-menu::-webkit-scrollbar-thumb:hover {
+    background: #d35400;
+}
